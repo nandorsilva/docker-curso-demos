@@ -5,7 +5,6 @@ LABEL class ="Laboratorio"
 EXPOSE 80
 USER root
 VOLUME ["/usr/share/nginx/html"]
-COPY file.html /usr/share/nginx/html/share
 ARG via_arg=vv
 ENV via_env=${via_arg}
 RUN apt-get update
